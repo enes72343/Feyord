@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Ticaret Sitesi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>E-Ticaret Sitesi</h1>
+</header>
+
+    <!-- Ürünler -->
+    <section id="ecommerce">
+      <h2>Ürünler</h2>
+      <div id="products"></div>
+    </section>
+  </main>
+
+  <!-- Satın Alma Formu -->
+  <form id="orderForm" style="display: none;">
+    <label for="username">Adınız/SoyAdınız:</label>
+    <input type="text" id="username" name="username" placeholder="Satın Alım İşlemi İçin Zorunlu" required>
+
+    <label for="email">E-posta:</label>
+    <input type="email" id="email" name="email" placeholder="Satın Alım İşlemi İçin Zorunlu" required>
+
+    <button type="submit">Siparişi Tamamla</button>
+    <p>Eğer Email Ve Gerçek İsminiz Soyisminiz Yanlışsa Şahsınıza Satış İşlemi Sunulmayacaktır Bilginize!</p>
+  </form>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
